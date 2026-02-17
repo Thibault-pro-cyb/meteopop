@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Police personnalisée (Civane) */
+/* Police (Civane) */
 @font-face {
   font-family: 'Civane';
   src: url('assets/fonts/civane/Civane\ Norm\ Bold\ Italic.otf') format('opentype');
