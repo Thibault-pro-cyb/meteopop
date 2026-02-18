@@ -18,7 +18,7 @@ fetch(url)
         const windspeed = current.windspeed;
         const weathercode = current.weathercode;
 
-        // Interprétation du code météo (simplifié)
+        // Interprétation du code météo
         let description = "";
         if (weathercode === 0) description = "Ciel dégagé";
         else if (weathercode === 1 || weathercode === 2) description = "Partiellement nuageux";
@@ -45,5 +45,4 @@ fetch(url)
     .catch(error => {
         console.error('Erreur météo:', error);
         document.getElementById('weatherDesc').textContent = 'Indisponible';
-        // Optionnel : laisser la couleur par défaut
     });
