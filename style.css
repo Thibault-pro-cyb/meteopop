@@ -27,6 +27,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  transition: background-color 0.5s; /* pour un changement de couleur fluide */
 }
 
 nav img {
@@ -49,6 +50,18 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* ----- NOUVEAU : bloc météo dans la navbar ----- */
+#meteo {
+  display: flex;
+  gap: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.2); /* légère transparence pour se détacher */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+/* ---------------------------------------------- */
 
 /* Sections communes */
 section {
